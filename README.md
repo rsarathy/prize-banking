@@ -10,4 +10,7 @@ Individuals tend to overinflate "underdogs" and unlikely events, which encourage
 
 ## Types of Systems
 
-TODO(rsarathy): Add descriptions of systems with different risk offerings.
+### Fixed Risk
+
+In a fixed risk system, banks will offer each savings account a fixed risk at
+increasing their principal, in this case, 1%.

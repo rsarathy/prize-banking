@@ -6,6 +6,8 @@
 # * Wealth follows a standard Pareto distribution, where roughly 20% of the
 #   accounts will own 80% of the assets under management in our bank.
 # * All assets under management will be loaned out at a rate of 8%.
+# * A bank will pay out "prizes" according to the latest recording balance
+#   before the formal end of year "drawing" takes place.
 
 import numpy as np
 
