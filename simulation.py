@@ -13,7 +13,7 @@ import numpy as np
 
 
 # The assets under management (AUM) controlled by the bank.
-AUM = 10**6
+AUM = 1
 
 # The rates that the bank will offer loans at.
 LOAN_RATE = 0.08
@@ -30,12 +30,15 @@ class BankingSimulation(object):
     self.assets_under_management = np.sum(self.accounts)
     self.profits = []
     
+  def _award_accounts(self):
+    raise NotImplementedError()
+    
 def _make_accounts():
   # Seed all saving accounts with wealth obeying a standard Pareto distribution.
   accounts = np.random.pareto(1, NUM_ACCOUNTS)
   
   # Scale each balance equally such that the assets under management is
-  # 1 million units.
+  # 1 unit.
   temp_sum = np.sum(accounts)
   for i in xrange(len(accounts)):
     accounts[i] *= (AUM / temp_sum)
